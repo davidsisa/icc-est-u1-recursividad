@@ -6,6 +6,8 @@ public class App {
         int resultado2 = rec.sumaConsecutivos(10);
         System.out.println(":" + resultado2);
         int resultado3 = rec.potencia(5, 2);
-        System.err.println(":potencia " + resultado3);
+        System.out.println(":potencia " + resultado3);
+        int resultado4 = rec.sumDigitos(465);
+        System.out.println(resultado4);
      }
 }

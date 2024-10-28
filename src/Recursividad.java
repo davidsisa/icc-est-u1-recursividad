@@ -26,4 +26,15 @@ public class Recursividad {
         return base * potencia(base, exponente - 1);
 
     }
+    //Crear un metodo que sume los digitos de un numero
+    //Si mando 456 me da 15
+    // 4 + 5 + 6
+    public  int sumDigitos(int digito){
+        if (digito < 10) {
+            return digito;
+        }
+        int ultimo = digito % 10;
+        return ultimo + sumDigitos(ultimo);
+
+    }
 }
