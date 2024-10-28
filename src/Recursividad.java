@@ -7,7 +7,23 @@ public class Recursividad {
             return 1;
         } 
         int resultado =  n * factorial( n - 1);
-        System.out.println("Resultado parcial de  " + n + " factorial ("+ (n-1) +")  = " + resultado );
+        System.out.println("Resultado parcial de  " + n + " factorial ("+ ( n - 1) +")  = " + resultado );
         return resultado;
+    }
+    //Calcular la suma de los numeros consecutivos
+    public int sumaConsecutivos(int n){
+        if(n == 1 ){
+            return 1;
+        }
+        return n + sumaConsecutivos(n - 1);
+    }
+    //Calcular la potencia de numero
+    public int potencia(int base , int exponente ){
+        if(exponente  == 0){
+            return 1;
+
+        }
+        return base * potencia(base, exponente - 1);
+
     }
 }
